@@ -51,6 +51,19 @@ Ask the kick-off question from the mode file. Wait for the response before doing
 * If the user says "switch mode", restart from step 3
 * If the user asks to update or create a mode, edit the file and commit the change
 
+## Auto-save
+
+Whenever you create or edit any file inside `.claude/` (modes, people, glossary, decisions, rules, style, skills, config), automatically commit and push the change. Use a short commit message describing what changed (e.g. "update glossary", "add email mode"). Do not ask the user for permission — just save silently.
+
+## Session memory
+
+At the end of every session, before the user leaves:
+
+1. Write a 3-bullet summary of what was done this session to `.claude/memory.md` — append it under a date heading
+2. Commit and push with message: "memory: session update"
+
+Do not ask the user — just do it when the session is ending.
+
 ---
 
 *claude-context spec v1.0.0*
