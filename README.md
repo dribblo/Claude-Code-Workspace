@@ -14,17 +14,17 @@ Claude Code automatically reads `CLAUDE.md` at the start of every session. `clau
 Your repo/
   CLAUDE.md          ← auto-loaded by Claude Code. This is the plugin.
   .claude/
-    branches/
+    modes/
       work.md        ← context for work tasks
       my-project.md  ← context for a specific project
       learning.md    ← context for study sessions
-    config.json      ← your name, default branch, preferences
+    config.json      ← your name, default mode, preferences
 ```
 
 Every session starts like this:
 
 ```
-Claude: Which branch today?
+Claude: Which mode today?
   1. work
   2. my-project
   3. learning
@@ -47,13 +47,13 @@ git clone https://github.com/dribblo/Claude-Code-workspace.git
 cd Claude-Code-workspace
 ```
 
-The wizard starts automatically. It will interview you about your work, build your personalised branch files, and set up your entire workspace in a single conversation.
+The wizard starts automatically. It will interview you about your work, build your personalised mode files, and set up your entire workspace in a single conversation.
 
 ---
 
-## Branch files
+## Modes
 
-A branch is a Markdown file that tells Claude:
+A mode is a Markdown file that tells Claude:
 
 - **Who you are** in this context
 - **What this mode is for**
@@ -61,7 +61,7 @@ A branch is a Markdown file that tells Claude:
 - **Background knowledge** it should always have
 - **A kick-off question** to open every session
 
-| Branch | Use case |
+| Mode | Use case |
 |---|---|
 | `work.md` | Emails, documents, meetings, professional communication |
 | `personal.md` | Life admin, decisions, planning, personal projects |
@@ -81,7 +81,7 @@ Claude Code is powerful out of the box — but blank. Every session starts the s
 
 ## Contributing
 
-Contributions welcome — especially new branch templates. See `CONTRIBUTING.md`.
+Contributions welcome — especially new mode templates. See `CONTRIBUTING.md`.
 
 ---
 

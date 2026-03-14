@@ -37,7 +37,7 @@ Based on my answers, suggest 2–4 work modes that reflect how I actually operat
 - How I want you to communicate with me
 - What background you should always have loaded
 
-Show me each file before saving. Let me edit. Ask which should be my default. Save confirmed files to .claude/branches/{name}.md
+Show me each file before saving. Let me edit. Ask which should be my default. Save confirmed files to .claude/modes/{name}.md
 
 ---
 
@@ -86,7 +86,7 @@ Tell me the 3 most useful things I can now ask you that I couldn't before — sp
 your-private-repo/
   CLAUDE.md                     ← loads your context every session
   .claude/
-    branches/                   ← your personalised work modes
+    modes/                      ← your personalised work modes
     people.md                   ← your key relationships
     glossary.md                 ← your language and terminology
     decisions.md                ← closed questions

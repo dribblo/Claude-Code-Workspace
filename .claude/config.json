@@ -1,6 +1,6 @@
 {
   "userName": "Your Name",
-  "defaultBranch": "work",
+  "defaultMode": "work",
   "version": "1.0.0",
   "createdAt": "2025-03-14"
 }

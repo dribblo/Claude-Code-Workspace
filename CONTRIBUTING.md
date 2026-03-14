@@ -4,9 +4,9 @@
 
 ## What we're looking for
 
-### Branch templates
+### Mode templates
 
-The most valuable contributions are branch templates for specific roles and professions:
+The most valuable contributions are mode templates for specific roles and professions:
 
 * `lawyer.md` — legal research, document drafting, client communication
 * `designer.md` — design critique, brief writing, visual direction
@@ -26,10 +26,10 @@ If the spec is unclear, incomplete, or wrong — open an issue. Changes require 
 
 README and SPEC in other languages are welcome.
 
-## How to contribute a branch template
+## How to contribute a mode template
 
 1. Fork the repo
-2. Copy `branches/project-template.md` to `branches/{role}.md`
+2. Copy `modes/project-template.md` to `modes/{role}.md`
 3. Fill in all 5 sections with realistic, useful content
 4. Remove all placeholder text
 5. Open a PR with a one-line description of who this is for

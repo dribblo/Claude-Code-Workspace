@@ -19,8 +19,8 @@ A compliant workspace MUST include the following:
 ```
 CLAUDE.md        (required) session loader
 .claude/         (required) context directory
-  branches/      (required) context mode files
-    {branch-name}.md  (at least one required)
+  modes/         (required) context mode files
+    {mode-name}.md  (at least one required)
   config.json    (required) workspace settings
 ```
 
@@ -37,15 +37,15 @@ Additional files and directories inside `.claude/` are permitted and ignored by 
 `CLAUDE.md` MUST instruct Claude Code to perform the following steps, in order, at the start of every session:
 
 1. **Read config** — load `.claude/config.json`
-2. **List branches** — read all `.md` files in `.claude/branches/`
-3. **Ask the user** — present the branch list and ask which one to use
-4. **Load branch** — read the chosen branch file into active context
-5. **Acknowledge** — confirm the active branch in one sentence
-6. **Ask kick-off question** — use the question defined in the branch file
+2. **List modes** — read all `.md` files in `.claude/modes/`
+3. **Ask the user** — present the mode list and ask which one to use
+4. **Load mode** — read the chosen mode file into active context
+5. **Acknowledge** — confirm the active mode in one sentence
+6. **Ask kick-off question** — use the question defined in the mode file
 
-### 2.2 Default branch
+### 2.2 Default mode
 
-If `config.json` defines a `defaultBranch`, CLAUDE.md SHOULD offer it as the default option.
+If `config.json` defines a `defaultMode`, CLAUDE.md SHOULD offer it as the default option.
 
 ### 2.3 Reference implementation
 
@@ -53,9 +53,9 @@ See `CLAUDE.md` in this repo.
 
 ---
 
-## 3. Branch files
+## 3. Mode files
 
-Branch files are Markdown documents in `.claude/branches/`. Each defines a context mode.
+Mode files are Markdown documents in `.claude/modes/`. Each defines a context mode.
 
 ### 3.1 Naming
 
@@ -65,7 +65,7 @@ Branch files are Markdown documents in `.claude/branches/`. Each defines a conte
 ### 3.2 Required sections
 
 ```
-Branch: {name}
+Mode: {name}
 Who I am
 What this mode is for
 How I want Claude to behave
@@ -89,7 +89,7 @@ Start by asking: "{Your question here}"
 ```json
 {
   "userName": "string (required)",
-  "defaultBranch": "string (optional)",
+  "defaultMode": "string (optional)",
   "version": "string (optional)",
   "createdAt": "string (optional — ISO 8601)"
 }
