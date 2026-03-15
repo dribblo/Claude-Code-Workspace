@@ -58,20 +58,6 @@ The wizard starts automatically. It will interview you about your work, build yo
 
 ---
 
-## Role packs
-
-Don't want to start from scratch? Role packs give you pre-built modes for your profession. The wizard detects them and offers them as a starting point.
-
-| Pack | Modes included |
-|---|---|
-| `product-owner` | Work (stories/ACs), Email, Bugs |
-| `founder` | Work (strategy), Investor comms, Hiring |
-| `consultant` | Work (deliverables), Client communication |
-
-More packs welcome — see `CONTRIBUTING.md`.
-
----
-
 ## Modes
 
 A mode is a Markdown file that tells Claude:
@@ -113,7 +99,6 @@ Say any of these during a session:
 - **Smart enrichment** — Claude suggests adding new terms, people, and decisions it notices during your session
 - **Output templates** — standardised formats for bugs, stories, emails, meeting briefs
 - **Workflow skills** — reusable workflows for recurring tasks
-- **Role packs** — pre-built starter modes for specific professions
 
 ---
 
@@ -127,7 +112,7 @@ Claude Code is powerful out of the box — but blank. Every session starts the s
 
 ## Contributing
 
-Contributions welcome — especially new mode templates and role packs. See `CONTRIBUTING.md`.
+Contributions welcome — especially new mode templates. See `CONTRIBUTING.md`.
 
 ---
 

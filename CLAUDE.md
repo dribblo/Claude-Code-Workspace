@@ -83,8 +83,8 @@ Create a shareable version of the workspace setup:
 2. Strip all personal information from .claude/ files (names, people, specific context)
 3. Keep the mode structure, rules format, and template formats intact
 4. Replace personal content with placeholder text like the original templates
-5. Save to .claude/exports/{mode-name}-pack.zip or show the anonymised files
-6. Tell the user: "Share this with anyone who has a similar role — they can use it as a starter pack."
+5. Save to .claude/exports/ or show the anonymised files
+6. Tell the user: "Share this with anyone who has a similar role — they can use it as a starting point."
 
 ---
 

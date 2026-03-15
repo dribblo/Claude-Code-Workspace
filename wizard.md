@@ -51,12 +51,7 @@ Based only on what I just told you — not generic features — give me 5 concre
 
 STEP 4 — BUILD MY WORK MODES
 
-First, check if a role pack exists in packs/ that matches my role. If one does, show it to me and ask: "I have a starter pack for your role. Want to use it as a base and customise from there, or build from scratch?"
-
-If using a pack: load its modes as starting points and let me edit each one.
-If building from scratch: suggest 2–4 work modes based on my answers.
-
-Not generic categories — modes shaped around my specific projects and responsibilities. For each one, explain why you're suggesting it. Let me adjust or remove any. For each confirmed mode, generate a context file that captures:
+Suggest 2–4 work modes based on my answers. Not generic categories — modes shaped around my specific projects and responsibilities. For each one, explain why you're suggesting it. Let me adjust or remove any. For each confirmed mode, generate a context file that captures:
 - Who I am in this mode
 - What tasks it covers
 - How I want you to communicate with me
