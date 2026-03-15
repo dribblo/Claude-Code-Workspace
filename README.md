@@ -1,8 +1,8 @@
 # Claude Code Workspace
 
-> The standard for Claude Code workspaces.
+> A simple way to make Claude Code remember who you are.
 
-`Claude Code Workspace` is an open convention for making Claude Code context-aware from the first message of every session. Instead of re-explaining who you are and what you're working on every time, Claude Code reads your workspace and asks which mode to start in.
+I got tired of re-explaining myself every time I opened Claude Code. So I built a workspace structure that makes it context-aware from the first message. Clone it, run the wizard, and every future session starts already knowing you.
 
 **Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — available in the terminal or inside the Claude desktop app.
 
@@ -13,7 +13,7 @@
 
 ## How it works
 
-Claude Code automatically reads `CLAUDE.md` at the start of every session. `Claude Code Workspace` defines what that file should contain — and how to structure the rest of your workspace — so Claude always starts informed, focused, and in the right mode.
+Claude Code automatically reads `CLAUDE.md` at the start of every session. This repo gives you a ready-made structure for that file — and the rest of your workspace — so Claude always starts informed, focused, and in the right mode.
 
 ```
 Your repo/
@@ -102,11 +102,11 @@ Say any of these during a session:
 
 ---
 
-## Why this exists
+## Why I built this
 
 Claude Code is powerful out of the box — but blank. Every session starts the same way: you explain who you are, what you're working on, how you like to communicate. Again. And again.
 
-`Claude Code Workspace` solves this with a simple convention: a structured workspace that Claude Code understands from the first word. It's not a plugin, an extension, or a wrapper. It's a file structure and a spec. It works today, with the Claude Code you already have, with no installs.
+This is my solution — a file structure that Claude Code reads automatically. No plugin, no extension, no installs. It works today with the Claude Code you already have. I'm sharing it because it's been useful to me and might be useful to you.
 
 ---
 
