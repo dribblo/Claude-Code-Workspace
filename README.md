@@ -23,7 +23,7 @@ Your repo/
       work.md        ← context for work tasks
       my-project.md  ← context for a specific project
       learning.md    ← context for study sessions
-    templates/       ← output formats (bug reports, stories, briefs)
+    templates/       ← output formats you use repeatedly
     skills/          ← reusable workflows
     config.json      ← your name, default mode, preferences
 ```
@@ -97,7 +97,7 @@ Say any of these during a session:
 - **Auto-save** — changes to your workspace are committed automatically
 - **Session memory** — Claude writes a summary at the end of every session
 - **Smart enrichment** — Claude suggests adding new terms, people, and decisions it notices during your session
-- **Output templates** — standardised formats for bugs, stories, emails, meeting briefs
+- **Output templates** — standardised formats for the documents you write most
 - **Workflow skills** — reusable workflows for recurring tasks
 
 ---
