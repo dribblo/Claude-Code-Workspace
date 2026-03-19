@@ -34,6 +34,9 @@ What this project does is give you a structured `CLAUDE.md` and a set of files t
 Your workspace/
   CLAUDE.md            ← auto-read by Claude Code at session start
   wizard.md            ← interactive setup (runs once)
+  projects/            ← where your actual work output lives
+    insurance-api/     ← one folder per project
+    onboarding/
   .claude/
     config.json        ← your name, default mode
     modes/

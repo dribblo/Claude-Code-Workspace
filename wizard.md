@@ -119,7 +119,17 @@ For each one I confirm, generate a template file in .claude/templates/. These te
 
 ---
 
-STEP 8 — SAVE EVERYTHING
+STEP 8 — SET UP MY PROJECTS
+
+Explain: "Remember the projects you mentioned earlier? Let's create folders for them. This is where your actual work will live — PRDs, briefs, stories, whatever you produce. One folder per project, and the contents grow naturally as you work."
+
+Based on the projects and responsibilities the user described in Step 2, suggest project folders. For each one the user confirms, create a folder in projects/{project-name}/. Use lowercase kebab-case for folder names.
+
+If the user doesn't have clear projects yet, just create the projects/ directory and say: "No worries — folders will be created automatically as you start working on things."
+
+---
+
+STEP 9 — SAVE EVERYTHING
 
 Explain: "We're done with the questions. Now I'm going to save everything we just built into your workspace. This happens automatically — you don't need to do anything."
 
@@ -145,7 +155,7 @@ If no:
 
 ---
 
-STEP 9 — MAKE IT EASY TO COME BACK
+STEP 10 — MAKE IT EASY TO COME BACK
 
 Explain: "Your workspace lives in this folder. Every time you want to use it, you need to open Claude Code from here. Let me set up a shortcut so you can do that with one word."
 
@@ -162,7 +172,7 @@ If no:
 
 ---
 
-STEP 10 — YOU'RE READY
+STEP 11 — YOU'RE READY
 
 Explain: "That's it — your workspace is built. From now on, every time you open Claude here, I'll already know who you are, what you're working on, and how you like to communicate."
 
@@ -183,6 +193,7 @@ Then automatically load the default mode: read the default mode file from .claud
 ```
 your-workspace/
   CLAUDE.md                     ← loads your context every session
+  projects/                     ← your work output, one folder per project
   .claude/
     modes/                      ← your personalised work modes
     people.md                   ← your key relationships

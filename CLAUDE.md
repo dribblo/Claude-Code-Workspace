@@ -88,12 +88,36 @@ Create a shareable version of the workspace setup:
 
 ---
 
+## Workspace contents
+
+### Projects
+- `projects/` — where actual work output lives. One subfolder per project.
+- When producing documents (PRDs, briefs, stories, etc.), save them into `projects/{project-name}/`.
+- Create project folders as needed. Do not pre-structure them — let the contents be organic.
+
+### Memory layer
+- `.claude/people.md` — key people, roles, and relationships
+- `.claude/glossary.md` — domain terms, personas, and internal language
+- `.claude/decisions.md` — settled decisions that should not be reopened
+- `.claude/rules.md` — hard constraints for every session
+- `.claude/style.md` — communication style preferences
+- `.claude/memory.md` — session log, updated automatically
+
+### Skills (shortcuts)
+- `.claude/skills/` — reusable workflow shortcuts (created by the wizard)
+
+### Templates (output formats)
+- `.claude/templates/` — standard output formats (created by the wizard)
+
+---
+
 ## Rules for this session
 
 * Do not skip the startup sequence, even if the user starts with a task
 * Stay in the active mode context for the full session
 * If the user asks to update or create a mode, edit the file and commit the change
-* When producing output (emails, bugs, stories, etc.), check .claude/templates/ for a matching template and use that format
+* When producing output (PRDs, briefs, stories, etc.), save to `projects/{project-name}/` and check .claude/templates/ for a matching template and use that format
+* When a skill shortcut is invoked, read the corresponding file from .claude/skills/ and follow its process
 
 ## Auto-save
 

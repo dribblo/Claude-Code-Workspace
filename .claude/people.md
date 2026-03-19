@@ -1,9 +1,4 @@
 # People
 
-> Add the key people in your work. Claude will always know who they are.
-
-## Template
-
-**[Name]**
-- Role: [Their role / relationship to you]
-- Context: [How you work together, anything Claude should know]
+> Key people in your work — names, roles, and how you work with them.
+> The wizard will fill this in during setup.
